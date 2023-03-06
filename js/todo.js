@@ -4,7 +4,6 @@ const toDoList = document.querySelector("#todo-list");
 
 const TODOS_KEY = "todos";
 
-
 // newTodo push하기 위한 빈 객체
 let toDos = [];
 
@@ -54,7 +53,6 @@ function handleToDoSubmit(evt) {
   paintToDo(newObj);
   // localstorage에 저장
   saveToDos();
-
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);

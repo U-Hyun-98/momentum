@@ -2,6 +2,8 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
+const toDo = document.querySelector("#todo-form");
+
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
@@ -21,8 +23,9 @@ function onLoginSubmit(evt) {
 function paintGreetings(username) {
   // h1 텍스트 추가
   greeting.innerHTML = `Hello ${username}`;
-  // h1에 hidden 클래스 제거
+  // h1, todo폼에 hidden 클래스 제거
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  toDo.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -34,4 +37,6 @@ if (savedUsername === null) {
 } else {
   // 있으면 h1 보여주기
   paintGreetings(savedUsername);
+  // todo폼 hidden 클래스 제거
+  toDo.classList.remove(HIDDEN_CLASSNAME);
 }
