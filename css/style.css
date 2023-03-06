@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body style */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+/* clock style */
+#clock {
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 7.5rem 1rem 4rem 1rem;
+  text-align: center;
+}
+
+/* form style */
+form {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* #login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+input[type="text"] {
+  width: 30%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  outline: none;
+  color: rgb(252, 252, 252);
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  box-shadow: -2px 0 16px rgb(252, 252, 252)
+}
+
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.818);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color: #2d3b55;
+  padding: 1rem 2.3rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3.2rem 0 0 0;
+  box-shadow: -2px 0 16px rgb(252, 252, 252);
+}
+
+input[type="submit"]:hover {
+  transition: 0.8s;
+  background-color: #2d3b55;
+  color: #fff;
+  box-shadow: -2px 0 10px rgb(252, 252, 252);
+}
+
+#greeting {
+  text-align: center;
+  margin: 3rem;
+  font-size: 1.8rem;
+}
+
+/* hidden class */
+.hidden {
+  display: none;
+}
+
+/* todo style */
+/* #todo-form input {
+  display: none;
+} */
+
+
+#todo-list {
+  text-align: center;
+  margin: 1.2rem;
+}
+
+#todo-list li {
+  list-style: none;
+  margin: 1rem;
+}
+
+#todo-list span {
+  padding: 0 2rem 0 0;
+}
+
+#todo-list button {
+  background-color: transparent;
+  border: none;
+}
+
+/* quote style */
+#quotes {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+#quotes span:first-child {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#quotes span:last-child {
+  font-size: 1rem;
+}
+
+/* weather style */
+#weather {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  text-align: right;
+}
+
+#weather span:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgba(253, 250, 247, 0.84);
+}
+
+#weather span:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(253, 250, 247, 0.84);
+}
