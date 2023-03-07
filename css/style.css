@@ -152,6 +152,7 @@ input[type="submit"]:not(:hover) {
   font-weight: 500;
   cursor: pointer;
   color: rgba(253, 250, 247, 0.84);
+  font-weight: 700;
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.14);
