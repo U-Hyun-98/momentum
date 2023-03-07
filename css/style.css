@@ -148,10 +148,10 @@ input[type="submit"]:not(:hover) {
   padding: 0.3rem 0.5rem;
   margin: 0.5rem;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   cursor: pointer;
-  color: #2d3b5597;
+  color: rgba(253, 250, 247, 0.84);
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.14);
@@ -179,7 +179,7 @@ input[type="submit"]:not(:hover) {
   display: none;
 }
 
-/* 여기여기여기 */
+
 #todo-list {
   display: flex;
   flex-direction: column;
