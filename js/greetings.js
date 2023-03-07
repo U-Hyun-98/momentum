@@ -1,6 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const logout = document.querySelector("#logout");
 
 const toDo = document.querySelector("#todo-form");
 
@@ -40,3 +41,10 @@ if (savedUsername === null) {
   // todo폼 hidden 클래스 제거
   toDo.classList.remove(HIDDEN_CLASSNAME);
 }
+
+// logout
+logout.addEventListener("click", () => {
+  // localStorage.removeItem(USERNAME_KEY);
+  localStorage.clear();
+  location.reload();
+});
